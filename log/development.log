@@ -1,0 +1,1953 @@
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-28 01:10:19 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 32ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (17.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (15.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateRequests (20180528012906)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "requests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "partnum" varchar, "explanation" text, "conditions" text, "reqdate" date, "modelsavailable" boolean, "mass" float, "iterative" boolean, "kpitinfo" text, "linkinfo" varchar, "testmethod" text, "assigneduser" varchar, "esttime" decimal, "estcost" decimal, "reportlink" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180528012906"]]
+  [1m[35m (16.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-28 01:30:40 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 23ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:30:43 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 908ms (Views: 905.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/requests.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.225.98.75 at 2018-05-28 01:30:45 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 165.225.98.75 at 2018-05-28 01:30:45 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 165.225.98.75 at 2018-05-28 01:30:45 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 165.225.98.75 at 2018-05-28 01:30:45 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 165.225.98.75 at 2018-05-28 01:30:45 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 165.225.98.75 at 2018-05-28 01:30:45 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 165.225.98.75 at 2018-05-28 01:30:46 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/requests.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.225.98.75 at 2018-05-28 01:30:46 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/requests/new" for 165.225.98.75 at 2018-05-28 01:30:53 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#new as HTML
+  Rendered requests/_form.html.erb (78.0ms)
+  Rendered requests/new.html.erb within layouts/application (87.0ms)
+Completed 200 OK in 172ms (Views: 124.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/requests" for 165.225.98.75 at 2018-05-28 01:33:12 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OqZJnAL0aeKTwiB4inimmzkLy9R4GfKIhmxiMw4WwLEp+MVuZWUy3+vrHOZDctyodmmFJ+UrGEaPewEIue8d8Q==", "request"=>{"partnum"=>"A11-1234", "explanation"=>"FEA analysis", "conditions"=>"Conditions ", "reqdate(1i)"=>"2018", "reqdate(2i)"=>"5", "reqdate(3i)"=>"28", "modelsavailable"=>"1", "mass"=>"203.25", "iterative"=>"1", "kpitinfo"=>"Difficult stuff to create", "linkinfo"=>"K:/test/", "testmethod"=>"Loading", "assigneduser"=>"John Smith", "esttime"=>"350", "estcost"=>"199.99", "reportlink"=>"K:/report/"}, "commit"=>"Create Request"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "requests" ("partnum", "explanation", "conditions", "modelsavailable", "mass", "iterative", "kpitinfo", "linkinfo", "testmethod", "assigneduser", "esttime", "estcost", "reportlink", "reqdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["partnum", "A11-1234"], ["explanation", "FEA analysis"], ["conditions", "Conditions "], ["modelsavailable", "t"], ["mass", 203.25], ["iterative", "t"], ["kpitinfo", "Difficult stuff to create"], ["linkinfo", "K:/test/"], ["testmethod", "Loading"], ["assigneduser", "John Smith"], ["esttime", 350.0], ["estcost", 199.99], ["reportlink", "K:/report/"], ["reqdate", "2018-05-28"], ["created_at", "2018-05-28 01:33:12.591895"], ["updated_at", "2018-05-28 01:33:12.591895"]]
+  [1m[36m (16.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://fearequest-neoster9.c9users.io/requests/1
+Completed 302 Found in 35ms (ActiveRecord: 18.3ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:33:13 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.5ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 54ms (Views: 22.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:33:18 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/new" for 165.225.98.75 at 2018-05-28 01:35:09 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#new as HTML
+  Rendered requests/_form.html.erb (20.2ms)
+  Rendered requests/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 95ms (Views: 74.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/requests" for 165.225.98.75 at 2018-05-28 01:35:11 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KeKTNutq2n2jQdpkAGU7RdtAzJw8jvGRCC7z1y1JnUo6vB/EjPuBQNto5vrJb0F2lCKCb6G8G18BOZDsmrBACg==", "request"=>{"partnum"=>"", "explanation"=>"", "conditions"=>"", "reqdate(1i)"=>"2018", "reqdate(2i)"=>"5", "reqdate(3i)"=>"28", "modelsavailable"=>"0", "mass"=>"", "iterative"=>"0", "kpitinfo"=>"", "linkinfo"=>"", "testmethod"=>"", "assigneduser"=>"", "esttime"=>"", "estcost"=>"", "reportlink"=>""}, "commit"=>"Create Request"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered requests/_form.html.erb (23.3ms)
+  Rendered requests/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 78ms (Views: 68.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/requests" for 165.225.98.75 at 2018-05-28 01:40:21 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPQ5bwPr6H7jZ5uao2/2gJrtUOT+M6mx2EOev6x5FG4nqrWdZHqzQ5tOpwRqZYyz1Y8eF2MBQ3/RVP2EG4DJLg==", "request"=>{"partnum"=>"A11-1235", "explanation"=>"Test", "conditions"=>"Condition test", "reqdate(1i)"=>"2018", "reqdate(2i)"=>"5", "reqdate(3i)"=>"29", "modelsavailable"=>"1", "mass"=>"155.55", "iterative"=>"0", "kpitinfo"=>"", "linkinfo"=>"", "testmethod"=>"", "assigneduser"=>"", "esttime"=>"", "estcost"=>"", "reportlink"=>""}, "commit"=>"Create Request"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "requests" ("partnum", "explanation", "conditions", "modelsavailable", "mass", "iterative", "kpitinfo", "linkinfo", "testmethod", "assigneduser", "reportlink", "reqdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["partnum", "A11-1235"], ["explanation", "Test"], ["conditions", "Condition test"], ["modelsavailable", "t"], ["mass", 155.55], ["iterative", "f"], ["kpitinfo", ""], ["linkinfo", ""], ["testmethod", ""], ["assigneduser", ""], ["reportlink", ""], ["reqdate", "2018-05-29"], ["created_at", "2018-05-28 01:40:21.191439"], ["updated_at", "2018-05-28 01:40:21.191439"]]
+  [1m[35m (17.0ms)[0m  commit transaction
+Redirected to https://fearequest-neoster9.c9users.io/requests/2
+Completed 302 Found in 27ms (ActiveRecord: 17.7ms)
+
+
+Started GET "/requests/2" for 165.225.98.75 at 2018-05-28 01:40:22 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (0.5ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered requests/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:40:26 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.5ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests/new" for 165.225.98.75 at 2018-05-28 01:40:27 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#new as HTML
+  Rendered requests/_form.html.erb (7.4ms)
+  Rendered requests/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:40:30 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.3ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:40:33 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:41:04 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `title' for #<Request:0x007f1cda6f0ee8>):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h2><%= link_to_unless_current @request.title, @request %></h2>
+    4: <%= simple_format @request.body %>
+    5: 
+    6: <p>
+  app/views/requests/show.html.erb:3:in `_app_views_requests_show_html_erb__839867615580389670_69880951052320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.2ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:41:26 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:45:13 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.3ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:45:28 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:45:30 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:45:34 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:45:55 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:46:52 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.5ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:47:51 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:50:17 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:50:20 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_request.html.erb (1.4ms)
+  Rendered requests/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:50:47 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.6ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:51:43 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.5ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:51:54 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:52:12 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_request.html.erb (0.9ms)
+  Rendered requests/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:52:18 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/2" for 165.225.98.75 at 2018-05-28 01:52:18 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered requests/_request.html.erb (1.0ms)
+  Rendered requests/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:52:20 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.3ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:53:13 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  Rendered requests/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h1>FEA/CFD Test Requests</h1>
+    4: <%= render partial: @request %>
+    5: <table>
+    6:   <thead>
+    7:     <tr>
+  app/views/requests/index.html.erb:4:in `_app_views_requests_index_html_erb__3057167175539823808_69880950349080'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.8ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:53:42 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/_request.html.erb (3.9ms)
+  Rendered requests/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h2>Request #<%= link_to_unless_current @request.id, @request %></h2>
+    2: <%= simple_format @request.partnum %>
+  app/views/requests/_request.html.erb:1:in `_app_views_requests__request_html_erb__2313169228147769913_39057680'
+  app/views/requests/index.html.erb:4:in `_app_views_requests_index_html_erb__3057167175539823808_39501400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.0ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:53:50 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.3ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/_request.html.erb (2.6ms)
+  Rendered requests/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h2>Request #<%= link_to_unless_current @request.id, @request %></h2>
+    2: <%= simple_format @request.partnum %>
+  app/views/requests/_request.html.erb:1:in `_app_views_requests__request_html_erb__2313169228147769913_39057680'
+  app/views/requests/index.html.erb:4:in `_app_views_requests_index_html_erb__3057167175539823808_39501400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.2ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:54:30 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/_request.html.erb (4.3ms)
+  Rendered requests/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `partnum' for nil:NilClass):
+    1: <h2>Request #<%= link_to_unless_current @request.partnum, @request %></h2>
+    2: <%= simple_format @request.partnum %>
+  app/views/requests/_request.html.erb:1:in `_app_views_requests__request_html_erb__2313169228147769913_69880948745780'
+  app/views/requests/index.html.erb:4:in `_app_views_requests_index_html_erb__3057167175539823808_39501400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.1ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 01:56:55 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (4.9ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 29ms (Views: 23.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 01:56:59 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.3ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_request.html.erb (1.6ms)
+  Rendered requests/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/requests/2" for 165.225.98.75 at 2018-05-28 01:58:03 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered requests/_request.html.erb (1.0ms)
+  Rendered requests/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20180528020011)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "request_id" integer, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_comments_on_request_id" ON "comments" ("request_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180528020011"]]
+  [1m[36m (17.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_request_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_request_id' AND type='index'
+[0m
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:00:26 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.3ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 360ms (Views: 348.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.225.98.75 at 2018-05-28 02:00:28 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.225.98.75 at 2018-05-28 02:00:28 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 02:00:36 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.5ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_request.html.erb (2.4ms)
+  Rendered requests/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 79ms (Views: 61.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:00:40 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:45:02 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.6ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 68ms (Views: 51.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 02:45:11 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.4ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/_request.html.erb (1.0ms)
+  Rendered requests/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:45:13 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:48:34 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.6ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 02:48:41 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.3ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_request.html.erb (1.3ms)
+  Rendered requests/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 45ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 02:49:29 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/_request.html.erb (0.9ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (64.6ms)
+Completed 200 OK in 102ms (Views: 98.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 02:50:36 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/_request.html.erb (1.2ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-28 02:51:30 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.5ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/requests/new" for 165.225.98.75 at 2018-05-28 02:52:20 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#new as HTML
+  Rendered requests/_form.html.erb (17.4ms)
+  Rendered requests/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 165.225.98.75 at 2018-05-28 02:53:38 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHx3d32dyDbyzEj+xQoRZsi5xVKp2Zc9I6MbL2kXAFpjIvuFGgyTC4rldGAMAGtVh9uLoTTrffMqtHgU3u7dGg==", "request"=>{"partnum"=>"B11-1236", "explanation"=>"Explanation of this part", "conditions"=>"Conditions of this test", "reqdate(1i)"=>"2018", "reqdate(2i)"=>"5", "reqdate(3i)"=>"28", "modelsavailable"=>"0", "mass"=>"51.95", "iterative"=>"0", "kpitinfo"=>"Info for KPIT", "linkinfo"=>"J:/engineering/request/", "testmethod"=>"Testing method", "assigneduser"=>"Jane Doe", "esttime"=>"12300", "estcost"=>"599.95", "reportlink"=>"K:/report/"}, "commit"=>"Create Request"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "requests" ("partnum", "explanation", "conditions", "modelsavailable", "mass", "iterative", "kpitinfo", "linkinfo", "testmethod", "assigneduser", "esttime", "estcost", "reportlink", "reqdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["partnum", "B11-1236"], ["explanation", "Explanation of this part"], ["conditions", "Conditions of this test"], ["modelsavailable", "f"], ["mass", 51.95], ["iterative", "f"], ["kpitinfo", "Info for KPIT"], ["linkinfo", "J:/engineering/request/"], ["testmethod", "Testing method"], ["assigneduser", "Jane Doe"], ["esttime", 12300.0], ["estcost", 599.95], ["reportlink", "K:/report/"], ["reqdate", "2018-05-28"], ["created_at", "2018-05-28 02:53:38.532607"], ["updated_at", "2018-05-28 02:53:38.532607"]]
+  [1m[36m (16.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://fearequest-neoster9.c9users.io/requests/3
+Completed 302 Found in 24ms (ActiveRecord: 17.2ms)
+
+
+Started GET "/requests/3" for 165.225.98.75 at 2018-05-28 02:53:39 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRequest Load (0.4ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered requests/_request.html.erb (1.1ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:53:44 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/2" for 165.225.98.75 at 2018-05-28 02:54:27 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (0.3ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered requests/_request.html.erb (1.1ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?  [["request_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:54:32 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/3/edit" for 165.225.98.75 at 2018-05-28 02:54:47 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered requests/_form.html.erb (7.7ms)
+  Rendered requests/edit.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:55:55 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/2/edit" for 165.225.98.75 at 2018-05-28 02:55:58 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered requests/_form.html.erb (6.6ms)
+  Rendered requests/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/requests/2" for 165.225.98.75 at 2018-05-28 02:56:30 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"72FS+2/omZ/21guR2SzrnKku29jzkXzvWWfUGCK6VOX8P94JCHnCoo7/Nw8QJpGv5kyVK26jliFQcLcjlUOJpQ==", "request"=>{"partnum"=>"A11-1235", "explanation"=>"Test", "conditions"=>"Condition test", "reqdate(1i)"=>"2018", "reqdate(2i)"=>"5", "reqdate(3i)"=>"29", "modelsavailable"=>"1", "mass"=>"155.55", "iterative"=>"0", "kpitinfo"=>"Some info for KPIT", "linkinfo"=>"K:/test/stuff/", "testmethod"=>"Another test method", "assigneduser"=>"Matt Smith", "esttime"=>"1301450", "estcost"=>"10", "reportlink"=>""}, "commit"=>"Update Request", "id"=>"2"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "requests" SET "kpitinfo" = ?, "linkinfo" = ?, "testmethod" = ?, "assigneduser" = ?, "esttime" = ?, "estcost" = ?, "updated_at" = ? WHERE "requests"."id" = ?[0m  [["kpitinfo", "Some info for KPIT"], ["linkinfo", "K:/test/stuff/"], ["testmethod", "Another test method"], ["assigneduser", "Matt Smith"], ["esttime", 1301450.0], ["estcost", 10.0], ["updated_at", "2018-05-28 02:56:30.346600"], ["id", 2]]
+  [1m[35m (16.0ms)[0m  commit transaction
+Redirected to https://fearequest-neoster9.c9users.io/requests/2
+Completed 302 Found in 27ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/requests/2" for 165.225.98.75 at 2018-05-28 02:56:31 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (0.3ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered requests/_request.html.erb (1.1ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?  [["request_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 02:56:36 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.5ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20180528030724)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180528030724"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_request_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_request_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:08:17 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.3ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 326ms (Views: 309.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up" for 165.225.98.75 at 2018-05-28 03:08:23 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 101ms (Views: 86.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:09:22 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.3ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:10:59 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.6ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 03:11:05 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.5ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_request.html.erb (1.9ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?  [["request_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 69ms (Views: 50.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/requests/1/edit" for 165.225.98.75 at 2018-05-28 03:11:07 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 165.225.98.75 at 2018-05-28 03:11:07 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (8.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 51ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:15:53 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.5ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 165.225.98.75 at 2018-05-28 03:15:55 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 165.225.98.75 at 2018-05-28 03:16:09 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPckE6OQRTq8OVYv1fL131eUjabsUIdEz7PXGHCGfOLfqajhxAEeB8QQarEc+I/sGPbDVXFibYrGpLQjx3+hog==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@gmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test@gmail.com"], ["encrypted_password", "$2a$11$r6H2rwQWv8XwnNbUS6DE3uX9t1IK86JeWbukwg/RYvJLYywwPs9lm"], ["created_at", "2018-05-28 03:16:09.905829"], ["updated_at", "2018-05-28 03:16:09.905829"]]
+  [1m[35m (17.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2018-05-28 03:16:09.927555"], ["current_sign_in_at", "2018-05-28 03:16:09.927555"], ["last_sign_in_ip", "165.225.98.75"], ["current_sign_in_ip", "165.225.98.75"], ["sign_in_count", 1], ["updated_at", "2018-05-28 03:16:09.929131"], ["id", 1]]
+  [1m[36m (16.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://fearequest-neoster9.c9users.io/requests/1/edit
+Completed 302 Found in 226ms (ActiveRecord: 36.4ms)
+
+
+Started GET "/requests/1/edit" for 165.225.98.75 at 2018-05-28 03:16:10 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.3ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_form.html.erb (12.0ms)
+  Rendered requests/edit.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 38ms (Views: 33.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:16:19 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 03:16:25 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/_request.html.erb (1.1ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (5.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/requests/1/comments" for 165.225.98.75 at 2018-05-28 03:16:27 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bZcoMoDurNpc2wRSDDFBDcKLYsQUIx2vz/83ReE5Imh+yaTA53/35yTyOMzFOzs+jeksN4kR92HG6FR+VsD/KA==", "comment"=>{"body"=>""}, "commit"=>"Add comment", "request_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRequest Load (0.1ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "comments" ("body", "request_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["body", ""], ["request_id", 1], ["created_at", "2018-05-28 03:16:27.392699"], ["updated_at", "2018-05-28 03:16:27.392699"]]
+  [1m[36m (18.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://fearequest-neoster9.c9users.io/requests/1
+Completed 302 Found in 38ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 03:16:27 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.3ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/_request.html.erb (1.2ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 1]]
+  Rendered requests/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/app/views"
+  * "/usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views"
+):
+    77: 
+    78: <h2>Comments</h2>
+    79: <div id="comments">
+    80:   <%= render partial: @request.comments %>
+    81: </div>
+    82: 
+    83: <%= form_for [@request, Comment.new] do |f| %>
+  app/views/requests/show.html.erb:80:in `_app_views_requests_show_html_erb__874889822975687444_69926347982000'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.1ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 03:17:31 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.5ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/_request.html.erb (1.2ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 1]]
+  Rendered comments/_comment.html.erb (1.4ms)
+  Rendered requests/show.html.erb within layouts/application (8.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 37ms (Views: 29.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/requests/1/comments" for 165.225.98.75 at 2018-05-28 03:17:41 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xo1WIFd83hR6qzR/MMJKZCxi1wTmOHRMVGlbC1Z09UdN09rSMO2FKQKCCOH5yDBXYwCZ93sKnoJdfjgw4Y0oBw==", "comment"=>{"body"=>"Test"}, "commit"=>"Add comment", "request_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRequest Load (0.1ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("body", "request_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Test"], ["request_id", 1], ["created_at", "2018-05-28 03:17:41.463698"], ["updated_at", "2018-05-28 03:17:41.463698"]]
+  [1m[36m (16.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://fearequest-neoster9.c9users.io/requests/1
+Completed 302 Found in 24ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 03:17:41 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRequest Load (0.3ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered requests/_request.html.erb (1.1ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 1]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered requests/show.html.erb within layouts/application (6.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:17:55 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:42:09 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+NameError (uninitialized constant Devise::Models::LdapAuthenticatable):
+  app/models/user.rb:4:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.1ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:48:36 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToRequests (20180528033937)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "requests" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "requests" ADD "encrypted_password" varchar DEFAULT '' NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "requests" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "requests" ADD "reset_password_sent_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "requests" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "requests" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "requests" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "requests" ADD "last_sign_in_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "requests" ADD "current_sign_in_ip" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "requests" ADD "last_sign_in_ip" varchar
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_requests_on_email" ON "requests" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_requests_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_requests_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_requests_on_reset_password_token" ON "requests" ("reset_password_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180528033937"]]
+  [1m[35m (16.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_request_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_request_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_requests_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_requests_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_requests_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_requests_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-28 03:49:03 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.3ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (29.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 373ms (Views: 359.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 03:49:09 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.5ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_request.html.erb (2.2ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?  [["request_id", 1]]
+  Rendered comments/_comment.html.erb (19.6ms)
+  Rendered requests/show.html.erb within layouts/application (153.0ms)
+Completed 200 OK in 209ms (Views: 201.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/requests/1/edit" for 165.225.98.75 at 2018-05-28 03:49:13 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 165.225.98.75 at 2018-05-28 03:49:14 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (9.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 165.225.98.75 at 2018-05-28 03:49:18 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3rKIUerBNQcuLF7YYyVQuKFu4p+N0yvnfGqtKek3ZETN7ASjjVBuOlYFYkaqLyqL7gysbBDhwSl1fc4SXs65BA==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "test@gmail.com"]]
+  [36mLDAP:[0m LDAP dn lookup: cn=test@gmail.com
+  [36mLDAP:[0m LDAP search for login: cn=test@gmail.com
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+Net::LDAP::ConnectionRefusedError (Connection refused - connect(2) for 127.0.0.1:389):
+  net-ldap (0.16.1) lib/net/ldap/connection.rb:72:in `open_connection'
+  net-ldap (0.16.1) lib/net/ldap/connection.rb:698:in `socket'
+  net-ldap (0.16.1) lib/net/ldap.rb:1321:in `new_connection'
+  net-ldap (0.16.1) lib/net/ldap.rb:1300:in `use_connection'
+  net-ldap (0.16.1) lib/net/ldap.rb:783:in `block in search'
+  net-ldap (0.16.1) lib/net/ldap/instrumentation.rb:19:in `instrument'
+  net-ldap (0.16.1) lib/net/ldap.rb:782:in `search'
+  net-ldap (0.16.1) lib/net/ldap.rb:1207:in `search_root_dse'
+  net-ldap (0.16.1) lib/net/ldap.rb:1273:in `paged_searches_supported?'
+  net-ldap (0.16.1) lib/net/ldap.rb:775:in `search'
+  /usr/local/rvm/gems/ruby-2.3.4/bundler/gems/devise_ldap_authenticatable-5393909a5050/lib/devise_ldap_authenticatable/ldap/connection.rb:239:in `search_for_login'
+  /usr/local/rvm/gems/ruby-2.3.4/bundler/gems/devise_ldap_authenticatable-5393909a5050/lib/devise_ldap_authenticatable/ldap/connection.rb:51:in `dn'
+  /usr/local/rvm/gems/ruby-2.3.4/bundler/gems/devise_ldap_authenticatable-5393909a5050/lib/devise_ldap_authenticatable/ldap/connection.rb:97:in `authorized?'
+  /usr/local/rvm/gems/ruby-2.3.4/bundler/gems/devise_ldap_authenticatable-5393909a5050/lib/devise_ldap_authenticatable/ldap/adapter.rb:15:in `valid_credentials?'
+  /usr/local/rvm/gems/ruby-2.3.4/bundler/gems/devise_ldap_authenticatable-5393909a5050/lib/devise_ldap_authenticatable/model.rb:48:in `valid_ldap_authentication?'
+  /usr/local/rvm/gems/ruby-2.3.4/bundler/gems/devise_ldap_authenticatable-5393909a5050/lib/devise_ldap_authenticatable/strategy.rb:18:in `block in authenticate!'
+  devise (4.4.3) lib/devise/models/authenticatable.rb:83:in `valid_for_authentication?'
+  devise (4.4.3) lib/devise/strategies/authenticatable.rb:38:in `validate'
+  /usr/local/rvm/gems/ruby-2.3.4/bundler/gems/devise_ldap_authenticatable-5393909a5050/lib/devise_ldap_authenticatable/strategy.rb:18:in `authenticate!'
+  warden (1.2.7) lib/warden/strategies/base.rb:54:in `_run!'
+  warden (1.2.7) lib/warden/proxy.rb:359:in `block in _run_strategies_for'
+  warden (1.2.7) lib/warden/proxy.rb:354:in `each'
+  warden (1.2.7) lib/warden/proxy.rb:354:in `_run_strategies_for'
+  warden (1.2.7) lib/warden/proxy.rb:324:in `_perform_authentication'
+  warden (1.2.7) lib/warden/proxy.rb:128:in `authenticate!'
+  devise (4.4.3) app/controllers/devise/sessions_controller.rb:19:in `create'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.8ms)
+
+
+Started GET "/users/sign_in" for 165.225.98.75 at 2018-05-28 03:51:24 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.3ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-28 03:51:25 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 392ms (Views: 384.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/requests/1" for 165.225.98.75 at 2018-05-28 03:51:31 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_request.html.erb (1.5ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?  [["request_id", 1]]
+  Rendered comments/_comment.html.erb (4.3ms)
+  Rendered requests/show.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 181ms (Views: 169.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/requests/2" for 165.225.98.75 at 2018-05-28 03:51:36 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered requests/_request.html.erb (0.9ms)
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?  [["request_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/requests/1/edit" for 165.225.98.75 at 2018-05-28 03:51:39 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered requests/_form.html.erb (13.0ms)
+  Rendered requests/edit.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/requests/3" for 165.225.98.75 at 2018-05-28 03:51:46 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRequest Load (0.2ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered requests/_request.html.erb (1.0ms)
+  [1m[36mComment Load (4.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-28 03:53:27 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20180528040433)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "username" varchar, "email" varchar, "login_token" varchar, "token_generated_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20180528040433)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "username" varchar, "email" varchar, "login_token" varchar, "token_generated_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddDeviseToRequests (20180528033937)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddDeviseToRequests (20180528033937)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 02:49:39 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20180528040433)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "username" varchar, "email" varchar, "login_token" varchar, "token_generated_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 02:50:58 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.6ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 02:51:14 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.9ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 02:57:21 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20180528040433)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar, "username" varchar, "email" varchar, "login_token" varchar, "token_generated_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_request_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_request_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_requests_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_requests_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_requests_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_requests_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 02:58:42 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 594ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0000000339dae8>:0x00000003395000>):
+     8: </head>
+     9: <body>
+    10:   <p class="navbar-text pull-right">
+    11:     <% if user_signed_in? %>
+    12:       Logged in as <strong><%= current_user.email %></strong>.
+    13:       <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+    14:       <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__2078041105232785837_26838420'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.5ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 03:15:34 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.3ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 299ms (Views: 283.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 165.225.98.75 at 2018-05-29 03:15:35 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 165.225.98.75 at 2018-05-29 03:15:36 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/requests/new" for 165.225.98.75 at 2018-05-29 03:15:49 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#new as HTML
+  Rendered requests/_form.html.erb (39.9ms)
+  Rendered requests/new.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-29 03:15:51 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/2/edit" for 165.225.98.75 at 2018-05-29 03:15:55 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRequest Load (0.4ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered requests/_form.html.erb (14.8ms)
+  Rendered requests/edit.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 77ms (Views: 46.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-29 03:15:58 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-29 03:33:02 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.6ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests" for 165.225.98.75 at 2018-05-29 03:34:53 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00000003fcb838>):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.6ms)
+
+
+Started GET "/requests/2/edit" for 165.225.98.75 at 2018-05-29 03:35:12 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x007fb2edd3c780>):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.4ms)
+
+
+Started GET "/requests/2/edit" for 165.225.98.75 at 2018-05-29 03:35:16 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/requests/2/edit"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/requests/2/edit" for 165.225.98.75 at 2018-05-29 03:35:19 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/requests/2/edit"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 03:35:23 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.5ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 03:35:48 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 379ms (Views: 362.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 03:37:11 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.5ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 68ms (Views: 62.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 03:38:12 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.4ms)[0m  [1mSELECT "requests".* FROM "requests"[0m
+  Rendered requests/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/requests/new" for 165.225.98.75 at 2018-05-29 03:38:17 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#new as HTML
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 165.225.98.75 at 2018-05-29 03:38:19 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (11.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (57.3ms)
+Completed 200 OK in 95ms (Views: 83.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests/2" for 165.225.98.75 at 2018-05-29 03:38:29 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRequest Load (0.9ms)[0m  SELECT  "requests".* FROM "requests" WHERE "requests"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered requests/_request.html.erb (8.6ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."request_id" = ?[0m  [["request_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered requests/show.html.erb within layouts/application (47.6ms)
+Completed 200 OK in 196ms (Views: 182.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/requests/2/comments" for 165.225.98.75 at 2018-05-29 03:38:33 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OmElmj/bgqmbk6O8RC5PnsFwGM1pDkPdlCzsNLN0zPxzw0M9zztPr9XD2ZvTbzf3s1Lw6UwhTZ/yRvAXV77Jyg==", "comment"=>{"body"=>""}, "commit"=>"Add comment", "request_id"=>"2"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 165.225.98.75 at 2018-05-29 03:38:34 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 165.225.98.75 at 2018-05-29 03:38:38 +0000
+Cannot render console from 165.225.98.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RequestsController#index as HTML
+  [1m[35mRequest Load (0.4ms)[0m  SELECT "requests".* FROM "requests"
+  Rendered requests/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.4ms)
