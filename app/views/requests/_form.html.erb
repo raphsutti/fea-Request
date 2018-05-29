@@ -1,0 +1,73 @@
+<%= form_for(@request) do |f| %>
+  <% if @request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@request.errors.count, "error") %> prohibited this request from being saved:</h2>
+
+      <ul>
+      <% @request.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :partnum %><br>
+    <%= f.text_field :partnum %>
+  </div>
+  <div class="field">
+    <%= f.label :explanation %><br>
+    <%= f.text_area :explanation %>
+  </div>
+  <div class="field">
+    <%= f.label :conditions %><br>
+    <%= f.text_area :conditions %>
+  </div>
+  <div class="field">
+    <%= f.label :reqdate %><br>
+    <%= f.date_select :reqdate %>
+  </div>
+  <div class="field">
+    <%= f.label :modelsavailable %><br>
+    <%= f.check_box :modelsavailable %>
+  </div>
+  <div class="field">
+    <%= f.label :mass %><br>
+    <%= f.text_field :mass %>
+  </div>
+  <div class="field">
+    <%= f.label :iterative %><br>
+    <%= f.check_box :iterative %>
+  </div>
+  <div class="field">
+    <%= f.label :kpitinfo %><br>
+    <%= f.text_area :kpitinfo %>
+  </div>
+  <div class="field">
+    <%= f.label :linkinfo %><br>
+    <%= f.text_field :linkinfo %>
+  </div>
+  <div class="field">
+    <%= f.label :testmethod %><br>
+    <%= f.text_area :testmethod %>
+  </div>
+  <div class="field">
+    <%= f.label :assigneduser %><br>
+    <%= f.text_field :assigneduser %>
+  </div>
+  <div class="field">
+    <%= f.label :esttime %><br>
+    <%= f.text_field :esttime %>
+  </div>
+  <div class="field">
+    <%= f.label :estcost %><br>
+    <%= f.text_field :estcost %>
+  </div>
+  <div class="field">
+    <%= f.label :reportlink %><br>
+    <%= f.text_field :reportlink %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>FEA/CFD Test Requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Part Number</th>
+      <th>Explanation</th>
+      <th>Conditions</th>
+      <th>Required Date</th>
+      <th>Models Available?</th>
+      <th>Mass</th>
+      <th>Iterative Dev?</th>
+      <th>KPIT Info</th>
+      <th>Link Info</th>
+      <th>Test Method</th>
+      <th>Assigned User</th>
+      <th>Estimated Time</th>
+      <th>Estimated Cost</th>
+      <th>Report Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @requests.each do |request| %>
+      <tr>
+        <td><%= request.partnum %></td>
+        <td><%= request.explanation %></td>
+        <td><%= request.conditions %></td>
+        <td><%= request.reqdate %></td>
+        <td><%= request.modelsavailable %></td>
+        <td><%= request.mass %></td>
+        <td><%= request.iterative %></td>
+        <td><%= request.kpitinfo %></td>
+        <td><%= request.linkinfo %></td>
+        <td><%= request.testmethod %></td>
+        <td><%= request.assigneduser %></td>
+        <td><%= request.esttime %></td>
+        <td><%= request.estcost %></td>
+        <td><%= request.reportlink %></td>
+        <td><%= link_to 'Show', request %></td>
+        <td><%= link_to 'Edit', edit_request_path(request) %></td>
+        <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Request', new_request_path %>

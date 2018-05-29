@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  partnum: MyString
+  explanation: MyText
+  conditions: MyText
+  reqdate: 2018-05-28
+  modelsavailable: false
+  mass: 1.5
+  iterative: false
+  kpitinfo: MyText
+  linkinfo: MyString
+  testmethod: MyText
+  assigneduser: MyString
+  esttime: 9.99
+  estcost: 9.99
+  reportlink: MyString
+
+two:
+  partnum: MyString
+  explanation: MyText
+  conditions: MyText
+  reqdate: 2018-05-28
+  modelsavailable: false
+  mass: 1.5
+  iterative: false
+  kpitinfo: MyText
+  linkinfo: MyString
+  testmethod: MyText
+  assigneduser: MyString
+  esttime: 9.99
+  estcost: 9.99
+  reportlink: MyString
